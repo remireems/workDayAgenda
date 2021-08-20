@@ -7,6 +7,19 @@ document.getElementById('currentDay').textContent = currentDate
 // gets current hour
 const currentHr = moment().hour()
 
+// created agenda object
+const agenda = {
+  'note9': '',
+  'note10': '',
+  'note11': '',
+  'note12': '',
+  'note13': '',
+  'note14': '',
+  'note15': '',
+  'note16': '',
+  'note17': ''
+}
+
 // local storage for workday agenda app
 let workday = JSON.parse(localStorage.getItem('workday')) || agenda
 
@@ -43,19 +56,6 @@ for (let i = 9; i < 18; i++) {
   // saves the note in the textarea, the saved note will stay even though you refresh
   let noteCount = 'note' + i
   document.getElementById(noteCount).textContent = workday[noteCount]
-}
-
-// created agenda object
-const agenda = {
-  'note9': '',
-  'note10': '',
-  'note11': '',
-  'note12': '',
-  'note13': '',
-  'note14': '',
-  'note15': '',
-  'note16': '',
-  'note17': '',
 }
 
 // when the save btn is clicked
