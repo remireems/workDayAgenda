@@ -1,21 +1,8 @@
 # workDayAgenda
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+For this assignment, I have added in the js code (not jQuery, my instructor said it was okay not to do it) to make the schedule function with the current date and time. When the user adds in their events, they can click the save icon to save the events. When they refresh the page, the saved events will not disappear as they were stored in a local storage. When the user deletes the event and saves it, it will erase what was typed in the textarea. When the schedule hour time matches with the current hour time, the timeblock will be highlighted red. When the schedule htr time is ahead of current hr time, those timeblocks will be highlighted green. When the schedule hr time is before the current hr time, those timeblocks will be highlighted grey. I have added in some html to create and display the schedule on the webpage. Also, I have added in some css to make the schedule look organized and centered.  
 
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
+URL: https://remireems.github.io/workDayAgenda/
 
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+Screenshot:
+![Screenshot of Work Day Agenda](WDA.png)
